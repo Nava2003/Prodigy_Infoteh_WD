@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <h1>Task1</h1>
+            <ul>
+                <li class="navbar" onclick="home()" aria-label="home">Home</li>
+                <li class="navbar" onclick="about()" aria-label="about us">About Us</li>
+                <li class="navbar" onclick="service()"aria-label="service">Service</li>
+                <li class="navbar" onclick="contact()" aria-label="contact">Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div id="home" class="hom">
+        <h2>Welcome to our Bakery</h2>
+        <h3>We offer a wide variety of delicious baked goods.</h3>
+    </div>
+    <div id="about" class="abo">
+        <h2>About us</h2>
+        <h3>Owner name: Navaneetha Krishna<br> 
+            Experience: 10 years in bakery business<br> 
+            Contact: 9092726452 <br>
+            Email: bnavaneethakrishna4@gmail.com
+        </h3>
+    </div> 
+    <div id="services" class="service">
+        <div id="services-container" class="servcon">
+            <h2>SNACKS ITEMS</h2>
+        </div>
+<div id="snacks-container" class="ser">
+     
+            <div id="snacksswitch" class="ss">
+                <img  src="https://tse2.mm.bing.net/th/id/OIP.JNoioBkD-cGvl6kHYPbg6QAAAA?w=268&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.aeNcthG7T82PJsvsCIHi-gHaHa?w=198&h=198&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.xSvy4IsyPnybkzsmWtwkxwHaFj?w=208&h=156&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.BOB4bbgmVWS9q6d3aFFouAHaFa?w=270&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+            </div>
+    
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <h3>Address:</h3>
+        <p>123 Main St, Anytown, USA 12345</p>
+        <h3>Phone:</h3>
+        <p>909-272-6452</p>
+        <h3>Email:</h3>
+        <p>bnavaneethakrishna4@gmail.com</p>
+    </div>
+
+    <script src="task1.js"></script>
+</body>
+</html>
+

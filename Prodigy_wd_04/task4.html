@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h1 class="title">PORTFOLIO</h1>
+            <ul  class="mainc">
+                <li class="navb" onclick="home()">HOME</li>
+                <li class="navb" onclick="profiles()">PROFILE</li>
+                <li class="navb" onclick="project()">PROJECTS</li>
+                <li class="navb" onclick="contact()">CONTACT</li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="home">
+        <h1 id="welcome">WELCOME TO MY PORTFOLIO</h1>
+        <h3 id="name">B.NAVANEETHAKRISHNA</h3>
+        <h3 id="pro">FRONT END DEVELOPER</h3>
+    </div>
+   <div class="profile">
+        <div class="head">
+            <h1>PROFILE</h1>
+        </div>
+        <div class="pro-container">
+            <h3>ABOUT</h3>
+            <p>Hi, I am B. Navaneetha Krishna, a CSE student with development skills in full-stack development, specializing in both frontend and backend technologies</p>
+            <h3>EDUCATION</h3>
+            <ul class="profile-content">
+                <li>SSLC: SRI VIJAY VIDYALAYA [2018-2019]</li>
+                <li>HSC: SRI VIJAY VIDYALAYA [2020-2021]</li>
+                <li>UG: KALASALINGAM ACADEMY OF RESEARCH AND EDUCATION [2021-PRESENT]</li>
+            </ul>
+            <h3>PROGRAMMING LANGUAGES KNOWN</h3>
+            <ul class="profile-content">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>JAVA</li>
+                <li>PYTHON</li>
+            </ul class="profile-content">
+            <h3>CERtIFICATIONS</h3>
+            <li>FOUNDATIONS OF CYBER SECURITY[GOOGLE]</li>
+            <li>FULL STACK WEB DEVELOPEMENT</li>
+            <li>ETHICAL HACKER[CISCO]</li>
+        <ul class="resumebutton">
+                <li><button id="resume" onclick="resume()">RESUME</button></li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="project">
+        <h1>PROJECTS</h1>
+        <div class="projectslide">
+            <div class="navbuttons">
+                <button class="leftbutton" id="lb" onclick="scrollleft()">&#10094</button>
+            </div>
+            <div class="projectholder">
+                <div class="projectcontainer">
+                    <h3 class="project-title">Mullberry hub</h3>
+                    <p class="project-description">Engaged in a project aimed at creating
+                        website for farmers specializing in mulberry
+                        cultivation</p>
+                </div>
+                <div class="projectcontainer">
+                    <h3 class="project-title"> Weather App</h3>
+                    <p class="project-description">A fully functional e-commerce website that allows users to browse products, add them to their cart, and proceed to checkout. It includes user authentication, secure payment gateways, and product recommendations based on user behavior.</p>
+                </div>
+                <div class="projectcontainer">
+                    <h3 class="project-title">Task Manager App</h3>
+                    <p class="project-description">A task management application that helps users organize and track their tasks. With features such as task prioritization, deadlines, and progress tracking, it allows users to stay productive and efficient in their daily activities.</p>
+                </div>
+                <div class="projectcontainer">
+                    <h3 class="project-title"> Online Learning Platform</h3>
+                    <p class="project-description">An online platform for courses where users can register for various educational courses. The platform allows course creators to upload videos, materials, and quizzes. It supports video streaming, discussions, and progress tracking for students.</p>
+                </div>
+                <div class="projectcontainer">
+                    <h3 class="project-title"> Social Media Dashboard</h3>
+                    <p class="project-description">A comprehensive dashboard to manage and monitor social media accounts in one place. It tracks engagement, posts, followers, and analytics, offering insights into social media performance and user behavior.</p>
+                </div>
+            </div>
+            <div class="navbuttons">
+                <button class="rightbutton" id="rb" onclick="scrollright()">&#10095</button>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>CONTACT ME</h1>
+        <div class="contact-con">
+            
+            <a href="https://www.linkedin.com/in/navaneetha-krishna-762765285"><image  class="con"src="https://tse4.mm.bing.net/th/id/OIP.qMjKXwPvmJhHw5cmsJrTNgHaHa?w=170&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"></image></a>
+           <a href="mailto:bnavaneethakrishna4@gmail.com"> <img  class="con"src="https://tse3.mm.bing.net/th/id/OIP._qo1-fAO8oeCTETJ1QujOAHaHa?w=161&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"></image></a>
+            <img class="con"src="https://tse4.mm.bing.net/th/id/OIP.NGIDdVP6vw9ue_D-mrEVFQHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7https://tse4.mm.bing.net/th/id/OIP.NGIDdVP6vw9ue_D-mrEVFQHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"></image>
+        </div>
+    </div>
+
+    <script src="task4.js"></script>
+</body>
+</html>

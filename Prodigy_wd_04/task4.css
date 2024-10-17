@@ -1,0 +1,277 @@
+
+body, html {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    color: black;
+    position: fixed;
+    background-color: moccasin;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar {
+    height: 70px;
+    padding: 30px;
+    display: flex;
+    background-color: #343a40;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navb {
+    padding: 15px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+.mainc {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navb:hover {
+    color: #ff6347;
+    cursor: pointer;
+}
+
+
+.home {
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 8%;
+}
+
+#welcome {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+    animation: fadeOut 2s ease-in-out;
+}
+
+#name {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: #f1f1f1;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#pro {
+    font-weight: 600;
+    color: #ddd;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+
+.profile {
+    height: 80vh;
+    padding: 20px;
+    background-color: wheat;
+    color: #333;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.profile-content li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.resumebutton {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30%;
+    animation: slideInRight 2s ease-in-out;
+    
+}
+#resume{
+    border: 10px #ff6347 solid;
+    border-radius: 10px;
+    background-color: #ff6347;
+    color: #282c34;
+    width: fit-content;
+    animation: slideup 2s ease-in-out;
+}
+#resume:hover{
+    background-color: burlywood;
+}
+.project{
+    height: 80vh;
+    background-color: cadetblue;
+    animation: fadeIn 2s ease-in-out;
+    display:none;
+    padding: 20px;
+}
+.projectslide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.projectholder {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 80%;
+}
+
+.projectcontainer {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 300px;
+    background-color: cadetblue;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+    animation: fadeOut 2s ease-in-out;
+}
+
+.project-title {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #ff6347;
+    animation: slideInLeft 2s ease-in-out;
+}
+
+.project-description {
+    margin-top: auto;
+    font-size: 1rem;
+    color: #f1f1f1;
+    animation:slideInRight 2s ease-in-out;
+}
+
+.navbuttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    transform: translateY(-50%);
+    animation: slideup 2s ease-in-out;
+}
+
+#lb, #rb {
+    background-color: blueviolet;
+    font-size: 40px;
+    color: white;
+}
+.contact-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+    animation:sildeInRight 4s ease-in-out;
+}
+.con{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50PX;
+    padding:50px;
+    animation: slideInLeft 3s ease-in-out;
+}
+.contact{
+    text-align: center;
+    background-color: lightgray;
+    animation: slideup 2s ease-in-out;
+    height: 60vh;
+    padding: 20px;
+    display:none;
+}
+.con:hover{
+    background-color: aquamarine;
+    color: gainsboro;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideup {
+    0% {
+        transform: translateY(100px) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+h1,h3{
+    color: #ff6347;
+}

@@ -1,0 +1,96 @@
+h1{
+    text-align: center;
+    border-width: 10px;
+    border-radius: 20px;
+    border-style: ridge;
+    font-style:unset;
+    color:darkblue;
+    background-color: red;
+    width: fit-content;
+    margin-left: 41%;
+    margin-bottom: 1%;
+}
+h3{
+    margin-left: 46%;
+    border-width: 10px;
+    border-radius: 40px;
+    border-style: outset;
+    color: blue;
+    background-color: rgb(201, 136, 136);
+    width: fit-content;
+}
+#game{
+    display:flex;
+    flex-direction: column;
+    height:80vh;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+
+    
+}
+.cell{
+    height:100px;
+    width: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-width:10px;
+    border-style:dashed;
+    border-color:black;
+    border-radius: 10px;
+    cursor:pointer;
+    font-size: xx-large;
+    font-weight: 900;
+    font-display:inherit;
+    color: red;
+    margin-top: 1%;
+    
+} 
+.cell:hover{
+  background-color: #33CC33;
+  animation: inherit;
+}
+button{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 47%;
+    margin-bottom: 10px;
+    height:fit-content;
+    width:fit-content;
+    font-size: x-large;
+    font-weight: 900;
+    font-style: unset;
+    border:20px ridge maroon;
+    border-radius: 40px;
+   
+}
+body{
+   
+    background-image: url("tic-tac-toe.png");
+   
+}
+
+  
+
+.disco {
+    animation: flicker 1s infinite;
+  }
+  
+  @keyframes flicker {
+    0% {
+      background-color: #FF69B4;
+    }
+    50% {
+      background-color: #33CC33;
+    }
+    100% {
+      background-color: #6666FF;
+    }
+  }
+  
+  
